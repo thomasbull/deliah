@@ -36,6 +36,18 @@
   }
 }
 
+.section-live {
+  background-image: url("../img/live-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.section-about {
+  background-image: url("../img/about-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .section-content {
   height: 100%;
   overflow: scroll;
