@@ -466,6 +466,9 @@ html.fp-enabled,
 .footer-links a {
   color: #fff;
 }
+.footer-links a:hover {
+  color: #008080;
+}
 
 @media (min-width: 48em) {
   .footer {

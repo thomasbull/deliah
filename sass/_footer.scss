@@ -30,6 +30,10 @@
 
 .footer-links a {
   color: #fff;
+
+  &:hover {
+    color: #008080;
+  }
 }
 
 @media (min-width: 48em) {
