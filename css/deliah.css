@@ -45,9 +45,6 @@ a {
   color: #268bd2;
   text-decoration: none;
 }
-a:hover, a:focus {
-  text-decoration: underline;
-}
 
 img {
   display: block;
@@ -347,8 +344,36 @@ html.fp-enabled,
   background-position: 50% 50%;
 }
 
+.section-music {
+  background-image: url("../img/music-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+@media (min-width: 48em) {
+  .section-music {
+    padding-top: 163px;
+  }
+}
+
+.section-content {
+  height: 100%;
+  overflow: scroll;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+}
+@media (min-width: 48em) {
+  .section-content {
+    width: 50%;
+    float: right;
+    border-top: 1px solid #fff;
+  }
+}
+
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 10px;
   right: 10px;
@@ -403,7 +428,7 @@ html.fp-enabled,
   }
 }
 .nav {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 0;
   width: 100%;
@@ -414,6 +439,7 @@ html.fp-enabled,
   text-align: center;
   text-transform: uppercase;
   font-family: "ModernMTStd-Extended";
+  line-height: 1;
 }
 
 .nav li {
@@ -431,23 +457,25 @@ html.fp-enabled,
   opacity: 0.6;
 }
 
-.nav .active a {
-  font-family: "ModernMTStd-ExtendedItalic";
+.nav .active {
   border-bottom: 1px solid #fff;
+  font-family: "ModernMTStd-ExtendedItalic";
 }
 
 @media (min-width: 48em) {
   .nav {
-    font-size: 72px;
     top: 30px;
-    left: 30px;
     width: 50%;
+    padding-left: 30px;
+    font-size: 72px;
     text-align: left;
   }
 
   .nav li {
     display: block;
+    height: 62px;
+    overflow: hidden;
     padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 10px;
   }
 }

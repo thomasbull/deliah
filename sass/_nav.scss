@@ -1,7 +1,7 @@
 // Navigation
 
 .nav {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 0;
   width: 100%;
@@ -12,6 +12,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family: "ModernMTStd-Extended";
+  line-height: 1;
 }
 
 .nav li {
@@ -30,23 +31,25 @@
   }
 }
 
-.nav .active a {
-  font-family: "ModernMTStd-ExtendedItalic";
+.nav .active {
   border-bottom: 1px solid #fff;
+  font-family: "ModernMTStd-ExtendedItalic";
 }
 
 @media (min-width: 48em) {
   .nav {
-    font-size: 72px;
     top: 30px;
-    left: 30px;
     width: 50%;
+    padding-left: 30px;
+    font-size: 72px;
     text-align: left;
   }
 
   .nav li {
     display: block;
+    height: 62px;
+    overflow: hidden;
     padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 10px;
   }
 }

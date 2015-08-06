@@ -24,8 +24,34 @@
   background-position: 50% 50%;
 }
 
+.section-music {
+  background-image: url("../img/music-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  @media (min-width: 48em) {
+    padding-top: 163px;
+  }
+}
+
+.section-content {
+  height: 100%;
+  overflow: scroll;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+
+  @media (min-width: 48em) {
+    width: 50%;
+    float: right;
+    border-top: 1px solid #fff;
+  }
+}
+
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 10px;
   right: 10px;
