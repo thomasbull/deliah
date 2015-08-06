@@ -461,7 +461,7 @@ html.fp-enabled,
 }
 
 .nav a {
-  display: block;
+  display: inline-block;
   color: #fff;
 }
 .nav a:hover {
