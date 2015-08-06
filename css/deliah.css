@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'ModernMTStd-Extended';
+  src: url("/fonts/modernmtstdextended.eot");
+  src: url("/fonts/modernmtstdextended.eot?#iefix") format("embedded-opentype"), url("/fonts/modernmtstdextended.woff") format("woff"), url("/fonts/modernmtstdextended.ttf") format("truetype"), url("/fonts/modernmtstdextended.svg#modernmtstdextended") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ModernMTStd-ExtendedItalic';
+  src: url("/fonts/modernmtstdextendeditalic.eot");
+  src: url("/fonts/modernmtstdextendeditalic.eot?#iefix") format("embedded-opentype"), url("/fonts/modernmtstdextendeditalic.woff") format("woff"), url("/fonts/modernmtstdextendeditalic.ttf") format("truetype"), url("/fonts/modernmtstdextendeditalic.svg#modernmtstdextendeditalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
 }
@@ -9,7 +23,7 @@ body {
 html {
   font-family: Lato, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 @media (min-width: 48em) {
   html {
@@ -22,6 +36,8 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -326,6 +342,12 @@ html.fp-enabled,
   height: 100%;
 }
 
+.section-deliah {
+  background-image: url("../img/deliah-poster.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .nav {
   position: fixed;
   top: 20px;
@@ -337,6 +359,7 @@ html.fp-enabled,
   list-style: none;
   text-align: center;
   text-transform: uppercase;
+  font-family: "ModernMTStd-Extended";
 }
 
 .nav li {
@@ -346,7 +369,17 @@ html.fp-enabled,
 }
 
 .nav a {
+  display: block;
   color: #fff;
+}
+.nav a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.nav .active a {
+  font-family: "ModernMTStd-ExtendedItalic";
+  border-bottom: 1px solid #fff;
 }
 
 @media (min-width: 48em) {
@@ -362,9 +395,5 @@ html.fp-enabled,
     display: block;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .nav a {
-    display: block;
   }
 }

@@ -11,6 +11,7 @@
   list-style: none;
   text-align: center;
   text-transform: uppercase;
+  font-family: "ModernMTStd-Extended";
 }
 
 .nav li {
@@ -20,7 +21,18 @@
 }
 
 .nav a {
+  display: block;
   color: #fff;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.6;
+  }
+}
+
+.nav .active a {
+  font-family: "ModernMTStd-ExtendedItalic";
+  border-bottom: 1px solid #fff;
 }
 
 @media (min-width: 48em) {
@@ -36,9 +48,5 @@
     display: block;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .nav a {
-    display: block;
   }
 }
