@@ -1,0 +1,45 @@
+// Gigs
+
+.gigs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gig {
+  margin-bottom: 10px;
+}
+
+.gig-venue {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "ModernMTStd-Extended";
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.gig-date {
+  font-family: "ModernMTStd-ExtendedItalic";
+}
+
+.gig.is-inactive .gig-venue,
+.gig.is-inactive .gig-date {
+  text-decoration: line-through;
+}
+
+.gig-tickets {
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+@media (min-width: 48em) {
+  .gig-venue {
+    font-size: 36px;
+  }
+
+  .gig-date {
+    font-size: 30px;
+  }
+}

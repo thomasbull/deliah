@@ -40,6 +40,12 @@
   background-image: url("../img/live-bg.jpg");
   background-size: cover;
   background-position: 50% 50%;
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  @media (min-width: 48em) {
+    padding-top: 235px;
+  }
 }
 
 .section-about {
@@ -53,6 +59,7 @@
   overflow: scroll;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
   color: #fff;
 
   @media (min-width: 48em) {
