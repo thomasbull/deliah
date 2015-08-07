@@ -18,10 +18,16 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('#fullpage').fullpage({
-          anchors: ['deliah', 'music', 'live', 'about'],
+          // navigation
           menu: '#menu',
+          anchors: ['deliah', 'music', 'live', 'about'],
+
+          // scrolling
           css3: true,
           scrollingSpeed: 1000,
+          normalScrollElements: '.section-content',
+
+          // design
           verticalCentered: false
         });
       });
