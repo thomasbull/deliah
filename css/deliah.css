@@ -363,6 +363,7 @@ html.fp-enabled,
 @media (min-width: 48em) {
   .section-music {
     padding-top: 163px;
+    padding-bottom: 0;
   }
 }
 
@@ -376,6 +377,7 @@ html.fp-enabled,
 @media (min-width: 48em) {
   .section-live {
     padding-top: 235px;
+    padding-bottom: 0;
   }
 }
 
@@ -389,6 +391,7 @@ html.fp-enabled,
 @media (min-width: 48em) {
   .section-about {
     padding-top: 307px;
+    padding-bottom: 0;
   }
 }
 
