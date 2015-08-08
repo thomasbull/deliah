@@ -41,6 +41,10 @@ a {
   &:focus {
     outline: 0;
   }
+
+  &:hover {
+    color: #008080;
+  }
 }
 
 img {

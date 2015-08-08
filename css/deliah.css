@@ -48,6 +48,9 @@ a {
 a:active, a:hover, a:focus {
   outline: 0;
 }
+a:hover {
+  color: #008080;
+}
 
 img {
   display: block;
@@ -426,10 +429,6 @@ html.fp-enabled,
 
 .nav a {
   display: inline-block;
-  color: #fff;
-}
-.nav a:hover {
-  color: #008080;
 }
 
 .nav .active {
@@ -480,13 +479,6 @@ html.fp-enabled,
   display: inline-block;
   padding-left: 7px;
   padding-right: 7px;
-}
-
-.footer-links a {
-  color: #fff;
-}
-.footer-links a:hover {
-  color: #008080;
 }
 
 @media (min-width: 48em) {
