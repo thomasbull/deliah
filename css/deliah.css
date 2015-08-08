@@ -378,6 +378,13 @@ html.fp-enabled,
   background-image: url("../img/about.jpg");
   background-size: cover;
   background-position: 50% 50%;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+@media (min-width: 48em) {
+  .section-about {
+    padding-top: 307px;
+  }
 }
 
 .section-content {
@@ -385,7 +392,6 @@ html.fp-enabled,
   overflow: scroll;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 10px;
   color: #fff;
 }
 @media (min-width: 48em) {
@@ -393,6 +399,7 @@ html.fp-enabled,
     width: 50%;
     float: right;
     border-top: 1px solid #fff;
+    padding-top: 10px;
   }
 }
 
