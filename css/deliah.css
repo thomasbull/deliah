@@ -536,12 +536,13 @@ html.fp-enabled,
   color: #fff;
 }
 
-.gig-date {
+.gig p {
+  margin-bottom: 0;
   font-family: "ModernMTStd-ExtendedItalic";
 }
 
 .gig.is-inactive .gig-venue,
-.gig.is-inactive .gig-date {
+.gig.is-inactive .gig p {
   text-decoration: line-through;
 }
 
@@ -552,10 +553,10 @@ html.fp-enabled,
 
 @media (min-width: 48em) {
   .gig-venue {
-    font-size: 36px;
+    font-size: 30px;
   }
 
-  .gig-date {
+  .gig p {
     font-size: 30px;
   }
 }
