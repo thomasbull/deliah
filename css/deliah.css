@@ -404,12 +404,11 @@ html.fp-enabled,
 }
 @media (min-width: 48em) {
   .section-content {
-    width: 50%;
-    float: right;
     border-top: 1px solid #fff;
     padding-top: 10px;
-    padding-left: 0;
     padding-right: 0;
+    margin-left: 50%;
+    margin-right: 30px;
   }
 }
 
